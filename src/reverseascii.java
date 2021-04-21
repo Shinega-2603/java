@@ -1,6 +1,6 @@
 public class reverseascii {
     public static void main(String[] args) {
-        int b = 97;
+        int b = 32;
         char c;
         c = (char) b;
         System.out.println(c);
