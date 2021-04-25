@@ -1,15 +1,21 @@
-
+import java.util.Scanner;
 
 public class Stringfun {
     public static void main(String[] args) {
-        String k1 = "hello";
+        String k1 = "hellohiiii";
         String k2 = "am";
 //      replace(k1);
 //      compareTo(k1,k2);
 //        isEmpty(k1);
 //        System.out.println(isEmpty(k1));
 //        isEqual(k1,k2);
-        trimString(k1);
+//        trimString(k1);
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the startIndex");
+        System.out.println("enter the endIndex");
+        int startIndex = sc.nextInt();
+        int endIndex = sc.nextInt();
+        subString(k1, startIndex, endIndex);
 //
 
 
@@ -74,28 +80,39 @@ public class Stringfun {
 //                return true;
 //        }
 //    }
-    public static void trimString(String s1) {
-        s1 = "     hello hi     ";
+//    public static void trimString(String s1) {
+//        s1 = "     hello hi     ";
+//
+//        int startIndex = 0;
+//        int endIndex = 0;
+//        for (int i = 0; i < s1.length(); i++) {
+//            if (s1.charAt(i) != ' ') {
+//                startIndex = i;
+//                break;
+//            }
+//
+//        }
+//        System.out.println(startIndex);
+//
+//        for (int i = s1.length() - 1; i > 0; i--) {
+//            if (s1.charAt(i - 1) != ' ') {
+//                endIndex = i;
+//                break;
+//            }
+//
+//        }
+//        System.out.println(endIndex);
+//        System.out.println(s1.substring(startIndex, endIndex));
+//    }
+    public static void subString(String s1, int startIndex, int endIndex) {
 
-        int startIndex = 0;
-        int endIndex = 0;
-        for (int i = 0; i < s1.length(); i++) {
-            if (s1.charAt(i) != ' ') {
-                startIndex = i;
-                break;
-            }
+        String a = "";
+        for (int i = startIndex; i < endIndex; i++) {
+            a += s1.charAt(i);
 
         }
-        System.out.println(startIndex);
-
-        for (int i = s1.length() - 1; i > 0; i--) {
-            if (s1.charAt(i - 1) != ' ') {
-                endIndex = i;
-                break;
-            }
-
-        }
-        System.out.println(endIndex);
-        System.out.println(s1.substring(startIndex, endIndex));
+        System.out.println(a);
     }
-}
+
+    }
+
