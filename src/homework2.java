@@ -24,16 +24,10 @@ public class homework2 {
 
     public static void calender() {
         int year = 2020;
+
         for (int month = 1; month <= 12; month++) {
             for (int date = 1; date <= 31; date++) {
-                if (month % 2 != 0 && month != 7) {
-                    System.out.println(year + "-" + month + "-" + date);
-                }
-            }
-        }
-        for (int month = 1; month <= 7; month++) {
-            for (int date = 1; date <= 30; date++) {
-                if (month % 2 == 0 && month != 2) {
+                if (month % 2 != 0 && month != 7 && month != 9 && month != 11) {
                     System.out.println(year + "-" + month + "-" + date);
                 }
             }
@@ -47,12 +41,29 @@ public class homework2 {
                 }
             }
         }
+        for (int month = 1; month <= 7; month++) {
+            for (int date = 1; date <= 30; date++) {
+                if (month % 2 == 0 && month != 2) {
+                    if (month == 9 && month == 11) {
+                        System.out.println(year + "-" + month + "-" + date);
+                    }
+                }
+            }
+        }
+
         int month = 2;
-        if (month == 2) {
+        if (year % 4 == 0) {
             for (int date = 1; date <= 29; date++) {
+                System.out.println(year + "-" + month + "-" + date);
+            }
+        } else {
+            for (int date = 1; date <= 28; date++) {
                 System.out.println(year + "-" + month + "-" + date);
             }
         }
 
     }
+
+
 }
+
