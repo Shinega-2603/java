@@ -3,9 +3,9 @@ public class homework3 {
 //      contVowels();
 //      countWords();
 //        palindrome();
-        sumArray();
+//        sumArray();
 //        evenOdd();
-
+        numWord();
     }
 
     public static void contVowels() {
@@ -26,10 +26,12 @@ public class homework3 {
     public static void countWords() {
         String c = "A Transformation in Education";
         int count = 1;
-        for (int i = 0; i > c.length(); i++) {
+        for (int i = 0; i < c.length(); i++) {
             if (c.charAt(i) == ' ') {
+
                 count += 1;
             }
+
         }
         System.out.println(count);
     }
@@ -76,5 +78,51 @@ public class homework3 {
         }
         System.out.println("even average" + ":" + even_average);
         System.out.println("odd average" + ":" + odd_average);
+    }
+
+    public static void numWord() {
+        int s = 3987;
+        String a = String.valueOf(s);
+
+        for (int i = 0; i < a.length(); i++) {
+
+            switch (a.charAt(i)) {
+                case '0':
+                    System.out.print("Zero" + " ");
+
+                    break;
+                case '1':
+
+                    System.out.print("One" + " ");
+
+                    break;
+                case '2':
+
+                    System.out.print("Two" + " ");
+
+                    break;
+                case '3':
+                    System.out.print("Three" + " ");
+                    break;
+                case '4':
+                    System.out.println("Four" + " ");
+                    break;
+                case '5':
+                    System.out.println("Five" + " ");
+                    break;
+                case '6':
+                    System.out.println("Six" + " ");
+                    break;
+                case '7':
+                    System.out.println("Seven" + " ");
+                    break;
+                case '8':
+                    System.out.println("Eight" + " ");
+                    break;
+                case '9':
+                    System.out.println("Nine" + " ");
+                    break;
+            }
+        }
     }
 }
