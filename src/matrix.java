@@ -32,10 +32,11 @@ public class matrix {
     public static void addMatrix() {
         int[][] a = {{1, 2, 3}, {5, 6, 7}, {7, 8, 9}};
         int[][] b = {{2, 1, 2}, {1, 2, 1}, {2, 1, 2}};
-        int[][] c = new int[3][3];
+        int[][] c = new int[a.length][a[0].length];
 
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 3; j++) {
+
+        for (int i = 0; i < c.length; i++) {
+            for (int j = 0; j < c[i].length; j++) {
                 c[i][j] = a[i][j] + b[i][j];
                 System.out.print(c[i][j] + " ");
             }
@@ -60,7 +61,7 @@ public class matrix {
     }
 
     public static void diaMatrix() {
-        int[][] a = {{1, 2, 3}, {4, 5, 6}, {0, 8, 9}};
+        int[][] a = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
         int row = a.length;
         int col = a[0].length;
         int diagonal1 = 0;
