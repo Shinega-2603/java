@@ -1,7 +1,8 @@
 public class mirror {
     public static void main(String[] args) {
 //        mirr();
-        num();
+//        num();
+        maxnum();
     }
 
     public static void mirr() {
@@ -33,24 +34,27 @@ public class mirror {
             System.out.print(arr[i]);
         }
     }
-//        public static void Maxnum(){
-//            int[] arr = {0, 2, 0, 1};
-//            int temp = 0;
-//            int n=arr.length;
-//            for (int i = 0; i < n; i++) {
-//                for (int j = i + 1; j < n; j++) {
-//                    if((i==(n-1) && arr[j]!0)||(i!=n)){
-//                    if (arr[i] < arr[j]) {
-//                        temp = arr[i];
-//                        arr[i] = arr[j];
-//                        arr[j] = temp;
-//                    }
-//                }
-//
-//            }
-//            for ( i = 0; i < arr.length; i++)
-//                System.out.println(arr[i]);
-//
+
+    public static void maxnum() {
+        int[] arr = {0, 2, 8, 0};
+        int temp = 0;
+        int n = arr.length;
+        for (int i = 0; i < n; i++) {
+            for (int j = i + 1; j < n; j++) {
+                if ((arr[j] != 0) || i != n - 1) {//if(i != array.length - 1 || array[j] != 0
+                    if (arr[i] < arr[j]) {
+                        temp = arr[i];
+                        arr[i] = arr[j];
+                        arr[j] = temp;
+                    }
+                }
+
+            }
+            for (i = 0; i < arr.length; i++)
+                System.out.println(arr[i]);
+
+        }
+    }
 }
 
 
