@@ -4,7 +4,9 @@ public class practice {
     public static void main(String[] args) {
 //        num();
 //          reverse();
-        prime();
+//        primefactor();
+//        primeCount();
+        palinDrome();
     }
 
     public static void num() {
@@ -38,7 +40,7 @@ public class practice {
 
     }
 
-    public static void prime() {
+    public static void primefactor() {
         Scanner sc = new Scanner(System.in);
         System.out.println("star");
         int a = sc.nextInt();
@@ -56,6 +58,48 @@ public class practice {
         }
         if (a > 2) {
             System.out.println(a);
+        }
+    }
+
+    public static void primeCount() {
+        int star = 67;
+        int end = 90;
+        int count = 0;
+        int temp = 0;
+
+        for (int i = star; i <= end; i++) {
+            count = 0;
+            for (int j = 1; j <= i; j++) {
+                if (i % j == 0) {
+                    count += 1;
+
+                }
+            }
+            if (count == 2) {
+                temp += 1;
+//                System.out.println(temp);
+            }
+//            System.out.println(temp);
+        }
+        System.out.println(temp);
+    }
+
+    public static void palinDrome() {
+        int start = 78;
+        int end = 100;
+        int temp = 0;
+        int set = 0;
+        for (int i = start; i <= end; i++) {
+            temp = i;
+            set = 0;
+            while (temp != 0) {
+                int rem = temp % 10;
+                temp = temp / 10;
+                set = set * 10 + rem;
+            }
+            if (i == set) {
+                System.out.println(i);
+            }
         }
     }
 }
