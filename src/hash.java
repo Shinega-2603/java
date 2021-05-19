@@ -10,7 +10,10 @@ public class hash {
         hashMap.put("san", 345);
         hashMap.put("shi", 546);
         for (Map.Entry<String, Integer> map : hashMap.entrySet()) {
+
             System.out.println(map.getKey() + "-" + map.getValue());
+
         }
+
     }
 }
