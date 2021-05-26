@@ -6,7 +6,7 @@ public class practice {
 //          reverse();
 //        primefactor();
 //        primeCount();
-        palinDrome();
+//        palinDrome();
     }
 
     public static void num() {
