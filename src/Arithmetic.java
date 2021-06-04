@@ -13,6 +13,7 @@ public class Arithmetic {
             if (arr[i] + d == arr[i + 1]) {
                 arithmetic = true;
             }
+
         }
         for (int j = 0; j < arr.length - 1; j++) {
             geometric = false;
