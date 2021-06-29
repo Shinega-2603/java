@@ -3,7 +3,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-public class homework19 {
+public class HashmapArraylist {
     public static void main(String[] args) {
 //        has1();
         has2();

@@ -1,6 +1,9 @@
-import java.util.*;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.LinkedHashSet;
+import java.util.Scanner;
 
-public class hashSet {
+public class HashSet {
     public static void main(String[] args) {
 //        uniquSet();
         mas();
@@ -9,7 +12,7 @@ public class hashSet {
     public static void uniquSet() {
         Scanner sc = new Scanner(System.in);
 
-        HashSet<Character> hashSet = new LinkedHashSet<>();
+        java.util.HashSet<Character> hashSet = new LinkedHashSet<>();
         char[] arr = {'m', 'a', 's', 'a', 'i', 's', 'c', 'h', 'o', 'o', 'l'};
 
         for (int i = 0; i < arr.length; i++) {

@@ -1,4 +1,4 @@
-public class homework {
+public class AsciValue {
     public static void main(String[] args) {
 
         AscciValue('a');

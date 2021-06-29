@@ -1,4 +1,4 @@
-public class ass {
+public class ArrayMaxMinUniq {
     public static void main(String[] args) {
 //        pair();
 //        uniquie();

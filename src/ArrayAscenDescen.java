@@ -1,4 +1,4 @@
-public class arrays {
+public class ArrayAscenDescen {
     public static void main(String[] args) {
 //        int[] arr={3,5,7,8};
 

@@ -1,7 +1,7 @@
 import java.util.HashMap;
 import java.util.Map;
 
-public class hash {
+public class Hashmap {
     public static void main(String[] args) {
         HashMap<String, Integer> hashMap = new HashMap<>();
         hashMap.put("Mukesh", 984);

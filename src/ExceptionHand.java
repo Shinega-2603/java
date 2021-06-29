@@ -1,4 +1,4 @@
-public class exception {
+public class ExceptionHand {
     public static void main(String[] args) {
 //        arr();
         Try();
