@@ -1,18 +1,18 @@
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Scanner;
 
 public class Aspire {
     public static void main(String[] args) {
-//        Scanner sc=new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 //        int a=sc.nextInt();
-//        String s=sc.nextLine();
+        String s = sc.nextLine();
 //        reverse(a);
 //        patt(a);
-//        stringrev(s);
+        stringrev(s);
 //        permu(s," ");
 //        prime(a);
 //        ar();
-        sec();
+//        sec();
+//        numchar();
 
     }
 
@@ -40,7 +40,7 @@ public class Aspire {
     }
 
     public static void stringrev(String s) {
-        String d[] = s.split("");
+        String d[] = s.split(" ");
         String c = " ";
         for (int i = d.length - 1; i >= 0; i--) {
             c = c + d[i] + " ";
@@ -78,43 +78,51 @@ public class Aspire {
             }
         }
     }
-
-    public static void ar() {
-        int[] arr = {2, 4, 7, 8, 3, 6, 11};
-        List<Integer> out = new ArrayList();
-
-        for (int i = 0; i < arr.length; i++) {
-            int flag = 0;
-            if (!(arr[i] == 0 || arr[i] == 1)) {
-                int m = arr[i] / 2;
-                for (int j = 2; j <= m; j++) {
-                    if (arr[i] % j == 0) {
-                        flag = 1;
-                        break;
-                    }
-                }
-
-            }
-            if (flag == 0) {
-                out.add(arr[i]);
-
-            }
-        }
-        System.out.println(out);
-    }
-
-    public static void sec() {
-        int[] arr = {3, 11, 13, 23, 5};
-        int first = arr[0];
-        int seco = arr[0];
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] > first) {
-                seco = first;
-                first = arr[i];
-            } else if (arr[i] > seco && arr[i] < first) {
-                seco = arr[i];
-            }
-        }
-        System.out.print(seco);
-    }
+//
+//    public static void ar() {
+//        int[] arr = {2, 4, 7, 8, 3, 6, 11};
+//        List<Integer> out = new ArrayList();
+//
+//        for (int i = 0; i < arr.length; i++) {
+//            int flag = 0;
+//            if (!(arr[i] == 0 || arr[i] == 1)) {
+//                int m = arr[i] / 2;
+//                for (int j = 2; j <= m; j++) {
+//                    if (arr[i] % j == 0) {
+//                        flag = 1;
+//                        break;
+//                    }
+//                }
+//
+//            }
+//            if (flag == 0) {
+//                out.add(arr[i]);
+//
+//            }
+//        }
+//        System.out.println(out);
+//    }
+//
+//    public static void sec() {
+//        int[] arr = {3, 11, 13, 23, 5};
+//        int first = arr[0];
+//        int seco = arr[0];
+//        for (int i = 0; i < arr.length; i++) {
+//            if (arr[i] > first) {
+//                seco = first;
+//                first = arr[i];
+//            } else if (arr[i] > seco && arr[i] < first) {
+//                seco = arr[i];
+//            }
+//        }
+//        System.out.print(seco);
+//    }
+//    public static void numchar(){
+//        for(int i=65;i<=90;i++){
+//            System.out.println((char)i);
+//        }
+//        for(int i=97;i<=122;i++){
+//            System.out.println((char)i);
 }
+
+

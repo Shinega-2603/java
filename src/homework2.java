@@ -1,8 +1,8 @@
 public class homework2 {
     public static void main(String[] args) {
-//       pattern();
-//       odd();
-        calender();
+        pattern();
+////       odd();
+//        calender();
     }
 
     public static void pattern() {

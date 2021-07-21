@@ -2,9 +2,9 @@ public class ArrayMaxMinUniq {
     public static void main(String[] args) {
 //        pair();
 //        uniquie();
-//        max();
+        max();
 //        mas();
-        masi();
+//        masi();
     }
 
     public static void pair() {
@@ -41,7 +41,7 @@ public class ArrayMaxMinUniq {
     }
 
     public static void max() {
-        int[] arr = {1, 2, 6, 4, 9};
+        int[] arr = {1, 2, 6, 2, 9, 9, 9, 2, 9};
         int count = 1, ans = 0;
         for (int i = 0; i < arr.length; i++) {
 

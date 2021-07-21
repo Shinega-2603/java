@@ -117,25 +117,40 @@ public class Pattern {
 //            }
 //            System.out.println();
 //        }
-        int k = 1;
+//        int k = 1;
+//        for (int i = 1; i <= n; i++) {
+//            for (int j = 1; j < n - i; j++) {
+//                System.out.print(" ");
+//            }
+//            for (int j = 1; j <= i; j++) {
+//                if (i == n || j == 1 || j == i) {
+//                    System.out.print(j * k + " ");
+//                } else {
+//                    System.out.print("    ");
+//                }
+//            }
+//            System.out.println();
+//            k = k + 2;
+//        }
+//        for(int i=1;i<=n;i++){
+//            for(int j=1;j<n-i;j++){
+//                System.out.print(" ");
+//            }
+//            for(int j=1;j<=i;j++){
+//                System.out.print("* ");
+//            }
+//            System.out.println();
+//        }
+//    }
+        int k = 0;
         for (int i = 1; i <= n; i++) {
-            for (int j = 1; j < n - i; j++) {
-                System.out.print(" ");
-            }
             for (int j = 1; j <= i; j++) {
-                if (i == n || j == 1 || j == i) {
-                    System.out.print(j * k + " ");
-                } else {
-                    System.out.print("    ");
-                }
+                System.out.print(j * k + " ");
             }
             System.out.println();
             k = k + 2;
         }
     }
 }
-
-
-
 
 

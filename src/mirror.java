@@ -1,8 +1,8 @@
 public class mirror {
     public static void main(String[] args) {
 //        mirr();
-//        num();
-        maxnum();
+        num();
+//        maxnum();
     }
 
     public static void mirr() {

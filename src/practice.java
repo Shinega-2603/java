@@ -7,6 +7,7 @@ public class practice {
 //        primefactor();
 //        primeCount();
 //        palinDrome();
+        re();
     }
 
     public static void num() {
@@ -101,5 +102,15 @@ public class practice {
                 System.out.println(i);
             }
         }
+    }
+
+    public static void re() {
+        String d = "hiiiiii";
+        String b = "";
+        char[] c = d.toCharArray();
+        for (int i = c.length - 1; i >= 0; i--) {
+            b = b + c[i];
+        }
+        System.out.print(b);
     }
 }

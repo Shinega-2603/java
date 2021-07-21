@@ -2,9 +2,9 @@ public class Matrix {
     public static void main(String[] args) {
 //        transposes();
 //        addMatrix();
-        colWise();
+//        colWise();
 //        diaMatrix();
-//        subMatrix();
+        subMatrix();
 
     }
 
@@ -14,12 +14,12 @@ public class Matrix {
         int n = a[0].length;
 
 
-        for (int i = 0; i < a.length; i++) {
-            for (int j = 0; j < a[i].length; j++) {
-
-            }
-
-        }
+////        for (int i = 0; i < a.length; i++) {
+////            for (int j = 0; j < a[i].length; j++) {
+////
+////            }
+//
+//        }
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < m; j++) {
                 System.out.print(a[j][i]);
@@ -56,7 +56,7 @@ public class Matrix {
                 sumcol = sumcol + a[j][i];
 
             }
-            System.out.println(sumcol);
+            System.out.println(sumcol + " ");
         }
     }
 
