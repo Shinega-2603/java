@@ -15,7 +15,7 @@ public class Lengthstring {
                     count++;
                 } else break;
             }
-            System.out.println(temp);
+//            System.out.println(temp);
             if (finCount < count) {
                 finCount = count;
             }

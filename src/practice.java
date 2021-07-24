@@ -2,12 +2,12 @@ import java.util.Scanner;
 
 public class practice {
     public static void main(String[] args) {
-//        num();
+        num();
 //          reverse();
 //        primefactor();
 //        primeCount();
 //        palinDrome();
-        re();
+//        re();
     }
 
     public static void num() {

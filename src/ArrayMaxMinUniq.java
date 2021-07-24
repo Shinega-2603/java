@@ -2,8 +2,8 @@ public class ArrayMaxMinUniq {
     public static void main(String[] args) {
 //        pair();
 //        uniquie();
-        max();
-//        mas();
+//        max();
+        mas();
 //        masi();
     }
 

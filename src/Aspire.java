@@ -1,18 +1,23 @@
-import java.util.Scanner;
+import java.util.Arrays;
+import java.util.HashMap;
 
 public class Aspire {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+//        Scanner sc = new Scanner(System.in);
 //        int a=sc.nextInt();
-        String s = sc.nextLine();
+
 //        reverse(a);
 //        patt(a);
-        stringrev(s);
+//        stringrev(s);
 //        permu(s," ");
 //        prime(a);
 //        ar();
 //        sec();
 //        numchar();
+//        r();
+//        strmax();
+//        charduplicate();
+        remove();
 
     }
 
@@ -123,6 +128,95 @@ public class Aspire {
 //        }
 //        for(int i=97;i<=122;i++){
 //            System.out.println((char)i);
+public static void r() {
+    String s = "perfect the pic";
+    String a = " ";
+    String[] d = s.split("");
+    for (int i = d.length - 1; i >= 0; i--) {
+        a = a + d[i] + " ";
+    }
+    System.out.print(a);
+}
+
+    public static void strmax() {
+        String s = "greeeeeen go greeeen";
+        char[] a = s.toCharArray();
+        int[] count = new int[s.length()];
+        for (int i = 0; i < s.length(); i++) {
+            count[i] = 1;
+            for (int j = i + 1; j < s.length(); j++) {
+                if (a[i] == a[j] && a[i] != ' ' && a[i] != '0') {
+                    count[i]++;
+
+                    a[j] = '0';
+                }
+            }
+        }
+        int max = count[0];
+        char charmax = s.charAt(0);
+        for (int i = 0; i < count.length; i++) {
+            if (max > count[i] && count[i] != '0') {
+                max = count[i];
+                charmax = a[i];
+
+            }
+        }
+        System.out.print(max);
+    }
+
+    public static void maxword() {
+        String s = "geeks for geeks";
+        String[] d = s.split("");
+        HashMap<String, Integer> m = new HashMap<>();
+        for (int i = 0; i < d.length; i++) {
+            if (m.containsKey(d[i])) {
+                m.put(d[i], m.get(d[i + 1]));
+            } else {
+
+                m.put(d[i], 1);
+            }
+        }
+    }
+
+    public static void charduplicate() {
+        String s = "green grass go";
+        int count;
+        char[] c = s.toCharArray();
+        for (int i = 0; i < c.length; i++) {
+            count = 1;
+            for (int j = i + 1; j < c.length; j++) {
+                if (c[i] == c[j] && c[i] != ' ') {
+                    count++;
+
+                    c[j] = '0';
+                }
+            }
+            if (count > 1 && c[i] != '0') {
+                System.out.println(c[i]);
+            }
+
+        }
+
+    }
+
+    public static void remove() {
+        String s = "hello hi";
+        char[] a = s.toCharArray();
+        int index = 0;
+
+        for (int i = 0; i < a.length; i++) {
+            int j;
+            for (j = 0; j < i; j++) {
+                if (a[i] == a[j]) {
+                    break;
+                }
+            }
+            if (j == i) {
+                a[index++] = a[i];
+            }
+        }
+        System.out.print(String.valueOf(Arrays.copyOf(a, index)));
+    }
 }
 
 
